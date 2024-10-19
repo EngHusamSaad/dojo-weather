@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoW eather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <h1>DojoWeather</h1>
+        <ul class="cities">
+            <!-- TODO: move Funcation to javascript than write funciation here-->
+            <li onclick="alert('Loading weather report..')">Burbank</li>
+            <li onclick="alert('Loading weather report..')">Chiacgo</li>
+            <li onclick="alert('Loading weather report..')">Dallas</li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h2>SanJose</h2>
+        <div class="rightheader">
+            <p>show Temp in: </p>
+            <select name="tempunits" id="tempunits" onchange="changeunit(this)">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+        </div>
+    </div>
+<!-- TODO: change data to days-->
+    <div class="data">
+        <div class="day">
+            <h2>Today</h2>
+            <img src="./images/rain.png" alt="" class="imgtoday">
+            <h3>some rain</h3>
+            <div class="numbers">
+                <span class="numbershighets">24</span>
+                <span class="numberslowest" >18</span>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>Tomoorow</h2>
+            <img src="./images/sun.png" alt="" class="imgTomoorow">
+            <h3>some sun</h3>
+            <div class="numbers">
+                <div class="numbershighets">24</div>
+                <div class="numberslowest">18</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>Friday</h2>
+            <img src="./images/cloud.png" alt="" class="imgfriday">
+            <h3>some rain</h3>
+            <div class="numbers">
+                <div class="numbershighets">24</div>
+                <div class="numberslowest">18</div>
+            </div>
+        </div>
+
+        <div class="day">
+            <h2>Satarday</h2>
+            <img src="./images/sun.png" alt="" class="imgsatarday">
+            <h3>some rain</h3>
+            <div class="numbers">
+                <div class="numbershighets">24</div>
+                <div class="numberslowest">18</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookiesbar">
+        <img src="./images/cookies.png" alt="cookies Logo">
+        <div class="text">
+            <h2>Stop Cookie Time</h2>
+            <!-- TODO: change h3 to p , h2 to h1 -->
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit blanditiis aperiam repellat minus vitae, consequatur laborum, reiciendis rem laudantium voluptatem eum doloribus deleniti sapiente. Officiis nobis delectus nulla harum. <a href="Read More ...">Read More ...</a></h2>
+        </div>
+        <button class="cookiebuuton" onclick="removecookiebox()">I Accept</button> 
+    </div>
+
+    
+</body>
+</html>
